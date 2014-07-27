@@ -4,6 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>jQuery Blog</title>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(3000);
+  });
+});
+</script>
 <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
         <script type="text/javascript" src="script.js"></script>
 <style type="text/css">
@@ -37,7 +46,10 @@ body,td,th {
 <h1 id="blogh1">Blog for my jQuery animations</h1>
 <p id="twos"><span id="heading">July 27, 2014</span><br />
 <br />
-<div id="blue"></div></p>
+<button>Click me!</button>
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
 <br />
 <br />
 <p id="twos"><span id="heading">July 26, 2014</span><br />
