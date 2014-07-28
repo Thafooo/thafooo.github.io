@@ -4,9 +4,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>jQuery Blog</title>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>$(document).ready(function(){
+<script type="text/javascript">$(document).ready(function(){
   $("#button1").click(function(){
     $("#div").fadeIn();
+  });
+});</script>
+<script type="text/javascript">$(document).ready(function(){
+  $("#button2").click(function(){
+    $("p").hide();
   });
 });</script>
 <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
@@ -40,6 +45,10 @@ body,td,th {
 
 <body bgcolor="#CCCCCC">
 <h1 id="blogh1">Blog for my jQuery animations</h1>
+<p id="twos"><span id="heading">July 28, 2014</span><br />
+<img src="http://i.imgur.com/n0alLtp.jpg"></img>
+<button id="button2">Click me</button>
+<br />
 <p id="twos"><span id="heading">July 27, 2014</span><br />
 <br />
 <button id="button1">Click me!</button><br>
