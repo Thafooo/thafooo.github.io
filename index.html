@@ -22,7 +22,13 @@
 });
 </script>
 <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-        <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
 <style type="text/css">
 body,td,th {
 	font-family: Arial, Helvetica, sans-serif;
@@ -47,17 +53,34 @@ body,td,th {
 	padding: 5px;
 	font-weight: bold;	
 }
+
+#panel,#flip
+{
+padding:5px;
+text-align:center;
+background-color:#e5eecc;
+border:solid 1px #c3c3c3;
+}
+#panel
+
+{
+padding:50px;
+display:none;
+}
 </style>
 </head>
 
 <body bgcolor="#CCCCCC">
 <h1 id="blogh1">Blog for my jQuery animations</h1>
+<p id="twos"><span id="heading">July 29, 2014</span><br />
+<div id="flip">Click to slide the panel down or up</div>
+<div id="panel">Hello world!</div>
+<br />
 <p id="twos"><span id="heading">July 28, 2014</span><br />
 <br />
 <img id="img" src="http://i.imgur.com/n0alLtp.jpg"></img><br>
 <br />
 <button id="1">Hide the annoying picture!</button><button id="2">Make the annoying picture come back!</button>
-
 <br>
 <p id="twos"><span id="heading">July 27, 2014</span><br />
 <br />
