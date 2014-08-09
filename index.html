@@ -97,6 +97,13 @@ $(document).ready(function(){
   });
 });
 </script>
+<script>
+$(document).ready(function(){
+  $("#6").click(function(){
+    $("p").removeClass("twos");
+  });
+});
+</script>
 
 <style type="text/css">
 body,td,th {
@@ -153,6 +160,10 @@ display:none;
 
 <body bgcolor="#CCCCCC">
 <h1 id="blogh1">Blog for my jQuery animations</h1>
+<p id="twos"><span id="heading">August 4, 2014</span><br />
+<br />
+<br />
+<button id="6">Remove background color from all dates</button>
 <p id="twos"><span id="heading">August 3, 2014</span><br />
 <br />
 <br />
