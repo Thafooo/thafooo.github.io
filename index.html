@@ -100,7 +100,14 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
   $("#6").click(function(){
-    $("p").removeClass("twos");
+    $("p").removeClass("#twos");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#california").css({"background-color":"yellow","font-size":"200%"});
   });
 });
 </script>
@@ -109,6 +116,10 @@ $(document).ready(function(){
 body,td,th {
 	font-family: Arial, Helvetica, sans-serif;
 }
+#california {
+  padding: 5px;
+}
+
 #blogh1 {
 	text-align: center;
 	background-color: #666;
@@ -160,6 +171,10 @@ display:none;
 
 <body bgcolor="#CCCCCC">
 <h1 id="blogh1">Blog for my jQuery animations</h1>
+<p id="twos"><span id="heading">August 5, 2014</span><br />
+<p id="california"style="background-color:#ff0000">This is a paragraph!</p>
+<p id="california" style="background-color:#00ff00">This is a paragraph!</p>
+<p id="california" style="background-color:#0000ff">This is a paragraph!</p>
 <p id="twos"><span id="heading">August 4, 2014</span><br />
 <br />
 <br />
