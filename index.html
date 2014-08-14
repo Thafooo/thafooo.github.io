@@ -122,6 +122,16 @@ $(document).ready(function(){
   });
 });
 </script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown(5000);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+});
+</script>
 
 <style type="text/css">
 body,td,th {
@@ -177,12 +187,28 @@ border:solid 5px #c3c3c3;
 padding:50px;
 display:none;
 }
+#panel2,#flip2
+{
+padding:5px;
+text-align:center;
+background-color:#e5eecc;
+border:solid 1px #c3c3c3;
+}
+#panel2
+{
+padding:50px;
+display:none;
+}
 </style>
 </head>
 
 <body bgcolor="#CCCCCC">
 <h1 id="blogh1">Blog for my jQuery animations</h1>
-<p id="twos"><span id="heading">August 6, 2014</span><br />
+<p id="twos"><span id="heading">August 13, 2014</span><br />
+<button id="stop">Stop sliding</button>
+<div id="flip2">Click to slide down panel</div>
+<div id="panel2">Hello world!</div>
+<p id="twos"><span id="heading">August 6, 2014 (note, dates here are a little messed up, ignore this date)</span><br />
 <img id="22" src="ttp://i.imgur.com/n0alLtp.jpg"></img>
 <br><br>
 <button id="btn1">Insert before</button>
